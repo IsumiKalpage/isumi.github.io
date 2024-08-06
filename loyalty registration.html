@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Buy Grocery - Loyalty registration</title>
+    <link rel="stylesheet" href="CSS/loyalty regristration.css">
+    <link rel="shortcut icon" type="x-icon" href="Images/LOGOO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!---- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+          <a href="index.html">
+        <img src="Images/logooo.png" alt="Logo">
+          </a>
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about us.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="dairy.html" class="nav-link">Dairy Products</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle">Vegetables & Fruits</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="vegetables.html">Vegetables</a></li>
+            <li><a class="dropdown-item" href="fruits.html">Fruits</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle">Meat & Seafood</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="meat.html">Meat</a></li>
+            <li><a class="dropdown-item" href="seafood.html">Seafood</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="cosmetics & skin.html" class="nav-link">Cosmetic & SkinCare</a></li>
+        <li class="nav-item"><a href="baking.html" class="nav-link">Baking & Cooking</a></li>
+        <li class="nav-item"><a href="loyalty registration.html" class="nav-link">Loyalty Registration</a></li>
+        <li class="nav-item"><a href="order.html" class="nav-link">Order Page</a></li>
+      </ul>
+      <div class="cart-icon">
+        <a href="add to cart.html">
+            <img src="Images/shopping cart logo.png" alt="Cart" class="cart-img">
+        </a>
+      </div>
+    </nav>
+
+  <!-- Background image -->
+  <section class="body">
+    <br><br><h1 class="main">Join 'Smart Buy Grocery' Loyalty Program!</h1>
+  <!--introduction to the loyalty schemes-->
+    <p>Welcome to Smart Buy Grocery's Loyalty Program! Choose your preferred loyalty scheme below
+       and fill out the registration form to start earning rewards today.</p>
+       <div class="row">
+        <div class="intro-col">
+           <a href="gold.html"><h3>
+              <i class="fa-solid fa-medal"></i><br>GOLD TIER</h3></a>
+        </div>
+        <div class="intro-col2">
+          <a href="silver.html"><h3>
+              <i class="fa-solid fa-medal"></i><br>SILVER TIER</h3></a>
+        </div>
+        <div class="intro-col3">
+           <a href="bronze.html"><h3>
+              <i class="fa-solid fa-medal"></i><br>BRONZE TIER</h3></a>
+        </div>
+    </div>
+  
+<!--Form-->
+
+    <section class="bg">
+      <div class="box">
+          <br><h2>Register Here...</h2>
+          <form class="form-style"> 
+            <br><br>
+            <fieldset class="legend">
+              <legend>Customer info details</legend>
+            <br>
+            First Name: <input type="text" name="fname" size="50" required><br>
+            <br>
+            Last Name: <input type="text" name="fname" size="50" required><br>
+            <br>
+            <label>Date of Birth:</label>
+            <input type="date" required/><br>
+            <br>
+            </fieldset>
+            <br>
+            <fieldset class="legend">
+              <legend>Contact details</legend>
+           <br>
+          <label>Email ID: <input type="text" name="email" placeholder="abc@gmail.com" required></label><br>
+          <br>
+          <label>Mobile Number: <input type="text" name="mobile" size="10" placeholder="e.g.+94 77******" required></label><br>
+          <br>
+          </fieldset>
+          <br>
+          <fieldset class="legend">
+            <legend>Choose You're Prefered Loyalty Scheme</legend><br>
+            Loyalty Type: <label><input type="radio" name="tier" value="bronze" required> Gold Tier</label><br>
+                          <label class="label"><input type="radio" name="tier" value="silver" required> Silver Tier</label><br>
+                          <label class="label"><input type="radio" name="tier" value="gold" required> Bronze Tier</label>
+          </fieldset>
+          <br>
+          <label for="specialRequest">Special Request:</label>
+          <textarea class="request" name="specialRequest"></textarea>
+          <br>
+          <h4 class="h4">Terms & Conditions:</h4>
+          <p class="p">By submitting this form, you agree to the terms and conditions of Smart Buy Grocery's Loyalty Program.</p><br>
+          I agree to the terms & conditions:  <input type="checkbox" required><br>
+          <button id="submitButton" type="submit">Submit</button>
+          </form>
+      </div>
+    </section>
+  </section>
+  <br>
+  
+     <!--Footer-->
+     <footer class="footer">
+      <div class="container1">
+        <div class="row1">
+          <div class="footer-col">
+            <h4>Our Grocery</h4>
+            <br><ul class="list">
+              <li><a href="home.html">Home Page</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="loyalty registration.html">Loyalty Registration</a></li>
+              <li><a href="order.html">Order Page</a></li>
+            </ul>
+          </div><br>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <br><ul class="list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="https://keellssuper.com/DeliveryInfo">Shipping</a></li>
+              <li><a href="#">Returs</a></li>
+              <li><a href="#">Order status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div><br>
+          <div class="footer-col">
+            <h4>Our Varieties</h4>
+            <br><ul class="list">
+              <li><a href="dairy.html">Dairy</a></li>
+              <li><a href="vegetables.html">Vegetables & Fruits</a></li>
+              <li><a href="cosmetics & skin.html">Cosmetic & Skincare</a></li>
+            </ul>
+          </div><br>
+          <div class="footer-col">
+            <h4>Follow Us On</h4>
+            <div class="social-links">
+              <a href="https://www.instagram.com/keells.sl/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.facebook.com/Keells.SL/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fkeells_sl" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCCu17kGGZjuVITjK4Z_0N0g" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> 
+     
+
+</body>
+</html>

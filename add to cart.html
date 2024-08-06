@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Buy Grocery - Order</title>
+    <link rel="stylesheet" href="CSS/add to cart.css">
+    <link rel="stylesheet" href="CSS/cosmetics & skin.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="x-icon" href="Images/LOGOO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!---- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+              <img src="Images/logooo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about us.html" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="dairy.html" class="nav-link">Dairy Products</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle">Vegetables & Fruits</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="vegetables.html">Vegetables</a></li>
+                  <li><a class="dropdown-item" href="fruits.html">Fruits</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle">Meat & Seafood</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="meat.html">Meat</a></li>
+                  <li><a class="dropdown-item" href="seafood.html">Seafood</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="cosmetics & skin.html" class="nav-link">Cosmetic & SkinCare</a></li>
+              <li class="nav-item"><a href="baking.html" class="nav-link">Baking & Cooking</a></li>
+              <li class="nav-item"><a href="loyalty registration.html" class="nav-link">Loyalty Registration</a></li>
+              <li class="nav-item"><a href="order.html" class="nav-link">Order Page</a></li>
+            </ul>
+            <!--Search Bar-->
+            <div class="search-bar">
+              <input type="text" placeholder="Search">
+            </div>
+            <!-- Cart Icon -->
+            <div class="cart-icon">
+              <a href="add to cart.html">
+                  <img src="Images/shopping cart logo.png" alt="Cart" class="cart-img">
+              </a>
+            </div>
+          </nav>
+          <section class="mini"><br>
+            <h1 class="minh1">~Place Your Order Here~</h1><br>
+            <div class="sections-wrapper">
+              <div class="container">
+                <!--Dairy-->
+                <section class="order-box">
+                  <h1 class="h1">Dairy</h1>
+                  <hr>
+                    <div class="order-item">
+                        <img src="Images/anchor.jpg" alt="Item Image">
+                        <div class="order-details">
+                            <span class="item-name">Anchor Milk Powder</span>
+                            <span class="item-price">Rs.1090 </span>
+                        </div>
+                        <div class="quantity-input">
+                            <label for="quantity1">Qty:</label>
+                            <input type="number" id="quantity1" name="quantity1" min="0" value="0">
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="Images/cheese.jpg" alt="Item Image">
+                        <div class="order-details">
+                            <span class="item-name">Happy Cow Cheese - 350g</span>
+                            <span class="item-price">Rs.1290</span>
+                        </div>
+                        <div class="quantity-input">
+                            <label for="quantity2">Qty:</label>
+                            <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                        </div>
+                    </div>
+                    <div class="order-item">
+                      <img src="Images/ice cream.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Imorich Cookies'n Cream Ice Cream</span>
+                          <span class="item-price">Rs.975</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity2">Qty:</label>
+                          <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                      </div>
+                    </div>
+                    <div class="order-item">
+                      <img src="Images/yogurt.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Chobani Greek Yogurt</span>
+                          <span class="item-price">Rs.1975</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity2">Qty:</label>
+                          <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                      </div>
+                    </div>
+                    <div class="order-item">
+                      <img src="Images/milkmaid.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Nestle Milkmaid 975g</span>
+                          <span class="item-price">Rs.975</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity2">Qty:</label>
+                          <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                      </div>
+                    </div>
+                    <div class="order-item">
+                      <img src="Images/butter.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Fondre Butter 300g</span>
+                          <span class="item-price">Rs.950</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity2">Qty:</label>
+                          <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                      </div>
+                    </div>
+                </section>
+                <!--Fruits-->
+                <section class="order-box">
+                  <h1 class="h1">Fruits</h1>
+                  <hr>
+                    <div class="order-item">
+                        <img src="Images/apple.jpg" alt="Item Image">
+                        <div class="order-details">
+                            <span class="item-name">Apple - Red 1Kg</span>
+                            <span class="item-price">Rs.1900 </span>
+                        </div>
+                        <div class="quantity-input">
+                            <label for="quantity3">Kg:</label>
+                            <input type="number" id="quantity3" name="quantity3" min="0" value="0">
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <img src="Images/banana.jpg" alt="Item Image">
+                        <div class="order-details">
+                            <span class="item-name">Banana 1Kg</span>
+                            <span class="item-price">Rs.1000 </span>
+                        </div>
+                        <div class="quantity-input">
+                            <label for="quantity4">Kg:</label>
+                            <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                        </div>
+                    </div>
+                    <div class="order-item">
+                      <img src="Images/grapes.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Grapes 1Kg</span>
+                          <span class="item-price">Rs.2260 </span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity4">Kg:</label>
+                          <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                      </div>
+                   </div>
+                   <div class="order-item">
+                    <img src="Images/watermelon.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Watermelon 1Kg</span>
+                        <span class="item-price">Rs.920 </span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity4">Kg:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/passion fruit.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Passion Fruit 1Kg</span>
+                        <span class="item-price">Rs.1370</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity4">Kg:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                 </div>
+                 <div class="order-item">
+                  <img src="Images/oranges.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Oranges 1Kg</span>
+                      <span class="item-price">Rs.1720</span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity4">Kg:</label>
+                      <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                  </div>
+                </div>
+                </section>
+                <!--Vegetables-->
+                <section class="order-box">
+                  <h1 class="h1">Vegetables</h1>
+                  <hr>
+                  <div class="order-item">
+                      <img src="Images/onion.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Big Onions 1Kg</span>
+                          <span class="item-price">Rs.950 </span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity1">Kg:</label>
+                          <input type="number" id="quantity1" name="quantity1" min="0" value="0">
+                      </div>
+                  </div>
+                  <div class="order-item">
+                      <img src="Images/carrot.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Baby Carrots 1Kg</span>
+                          <span class="item-price">Rs.480</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity2">Kg:</label>
+                          <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                      </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/potato.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Baby Potatoes 1Kg</span>
+                        <span class="item-price">Rs.840 </span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/cabage.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Cabbage</span>
+                        <span class="item-price">Rs.190</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/brocoli.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Brocoli 1Kg</span>
+                        <span class="item-price">Rs.720</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/bitter gourd.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Bitter Gurd 1Kg</span>
+                        <span class="item-price">Rs.190</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+              </section>
+            </div>
+            
+            <!--2nd row of items-->
+            <div class="container">
+              <!--Meat-->
+              <section class="order-box">
+                <h1 class="h1">Meat</h1>
+                  <hr>
+                  <div class="order-item">
+                      <img src="Images/chicken.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Chicken Drumsticks 1Kg</span>
+                          <span class="item-price">Rs.1250</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity1">Kg:</label>
+                          <input type="number" id="quantity1" name="quantity1" min="0" value="0">
+                      </div>
+                  </div>
+                  <div class="order-item">
+                      <img src="Images/beef.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">BBQ Spare Ribs Sheet 1Kg</span>
+                          <span class="item-price">Rs.3950</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity2">Kg:</label>
+                          <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                      </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/winglets.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Chicken Winglets 1Kg</span>
+                        <span class="item-price">Rs.1610</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/sausage.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Krest Chicken Cheese & Onion Sausage</span>
+                        <span class="item-price">Rs.720</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/pork.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Pork Chops 1Kg</span>
+                        <span class="item-price">Rs.2900</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/mutton.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Local Mutton 1Kg</span>
+                        <span class="item-price">Rs.3720</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Kg:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                  </div>
+              </section>
+              <!--Seafood-->
+              <section class="order-box">
+                <h1 class="h1">Seafood</h1>
+                  <hr>
+                  <div class="order-item">
+                      <img src="Images/tuna.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Tuna Fish 1Kg</span>
+                          <span class="item-price">Rs.2190</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity3">Kg:</label>
+                          <input type="number" id="quantity3" name="quantity3" min="0" value="0">
+                      </div>
+                  </div>
+                  <div class="order-item">
+                      <img src="Images/shrimp.jpg" alt="Item Image">
+                      <div class="order-details">
+                          <span class="item-name">Shrimp 1Kg</span>
+                          <span class="item-price">Rs.2990</span>
+                      </div>
+                      <div class="quantity-input">
+                          <label for="quantity4">Kg:</label>
+                          <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                      </div>
+                  </div>
+                  <div class="order-item">
+                    <img src="Images/prawns.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Prawns 1Kg</span>
+                        <span class="item-price">Rs.2260</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity4">Kg:</label>
+                        <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                    </div>
+                 </div>
+                 <div class="order-item">
+                  <img src="Images/hurulla.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Hurulla 1Kg</span>
+                      <span class="item-price">Rs.1390</span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity4">Kg:</label>
+                      <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                  </div>
+                </div>
+                <div class="order-item">
+                  <img src="Images/thalapath.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Thalapath 1Kg</span>
+                      <span class="item-price">Rs.1990</span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity4">Kg:</label>
+                      <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                  </div>
+               </div>
+               <div class="order-item">
+                <img src="Images/cuttlefish.jpg" alt="Item Image">
+                <div class="order-details">
+                    <span class="item-name">Cuttlefish 1Kg</span>
+                    <span class="item-price">Rs.1020</span>
+                </div>
+                <div class="quantity-input">
+                    <label for="quantity4">Kg:</label>
+                    <input type="number" id="quantity4" name="quantity4" min="0" value="0">
+                </div>
+              </div>
+              </section>
+              <!--Baking-->
+              <section class="order-box">
+                <h1 class="h1">Baking & Cooking</h1>
+                  <hr>
+                <div class="order-item">
+                    <img src="Images/sugar.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Icing Sugar 1Kg</span>
+                        <span class="item-price">Rs.900</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity1">Qty:</label>
+                        <input type="number" id="quantity1" name="quantity1" min="0" value="0">
+                    </div>
+                </div>
+                <div class="order-item">
+                    <img src="Images/vanila.jpg" alt="Item Image">
+                    <div class="order-details">
+                        <span class="item-name">Vanila Extract</span>
+                        <span class="item-price">Rs.200</span>
+                    </div>
+                    <div class="quantity-input">
+                        <label for="quantity2">Qty:</label>
+                        <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                    </div>
+                </div>
+                <div class="order-item">
+                  <img src="Images/salt.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Salt</span>
+                      <span class="item-price">Rs.220</span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity2">Qty:</label>
+                      <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                  </div>
+                </div>
+                <div class="order-item">
+                  <img src="Images/sunflower.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Fortune Sunflower Oil 1L</span>
+                      <span class="item-price">Rs.1400 </span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity2">Qty:</label>
+                      <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                  </div>
+                </div>
+                <div class="order-item">
+                  <img src="Images/eggs.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Eggs</span>
+                      <span class="item-price">Rs.980</span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity2">Qty:</label>
+                      <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                  </div>
+                </div>
+                <div class="order-item">
+                  <img src="Images/flour.jpg" alt="Item Image">
+                  <div class="order-details">
+                      <span class="item-name">Flour 1Kg</span>
+                      <span class="item-price">Rs.990</span>
+                  </div>
+                  <div class="quantity-input">
+                      <label for="quantity2">Qty:</label>
+                      <input type="number" id="quantity2" name="quantity2" min="0" value="0">
+                  </div>
+                </div>
+            </section>
+          </div>
+            </div>
+            <br>
+            <button id="Pay" type="submit">Add To Cart</button>
+            <br><br>
+            <hr class="hr">
+            <h2>Order Summary</h2>
+            <hr class="hr"><br>
+            <table>
+              <thead>
+                <tr>
+                  <th>Item Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Cart items will be inserted here -->
+                <tr>
+                  <td colspan="3">Name</td>
+                  <td id="totalPrice">Rs. 0.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="button-container">
+              <a href="buynow.html"><button id="buynow" class="button">Buy Now</button></a>
+              <button id="applyFavorites" class="button">Apply Favorites</button>
+              <button id="addToFavourites" class="button">Add To Favorites</button>
+              <button id="resetCart" class="button">Reset Cart</button>
+          </div>
+            <br>
+          </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container1">
+        <div class="row1">
+          <div class="footer-col">
+            <h4>Our Grocery</h4>
+            <br><ul class="list">
+              <li><a href="home.html">Home Page</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="loyalty registration.html">Loyalty Registration</a></li>
+              <li><a href="order.html">Order Page</a></li>
+            </ul>
+          </div><br>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <br><ul class="list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="https://keellssuper.com/DeliveryInfo">Shipping</a></li>
+              <li><a href="#">Returs</a></li>
+              <li><a href="#">Order status</a></li>
+              <li><a href="#">Payment Options</a></li>
+            </ul>
+          </div><br>
+          <div class="footer-col">
+            <h4>Our Varieties</h4>
+            <br><ul class="list">
+              <li><a href="dairy.html">Dairy</a></li>
+              <li><a href="vegetables.html">Vegetables & Fruits</a></li>
+              <li><a href="cosmetics & skin.html">Cosmetic & Skincare</a></li>
+            </ul>
+          </div><br>
+          <div class="footer-col">
+            <h4>Follow Us On</h4>
+            <div class="social-links">
+              <a href="https://www.instagram.com/keells.sl/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://web.facebook.com/Keells.SL/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fkeells_sl" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCCu17kGGZjuVITjK4Z_0N0g" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer> 
+    <script src="Javascript/script.js"></script>
+</body>
