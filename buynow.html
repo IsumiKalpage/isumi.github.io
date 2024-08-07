@@ -52,45 +52,82 @@
       </div>
     </nav>
     <section class="bg"><br><br>
+      <hr class="hr">
+            <h2>Order Summary</h2>
+      <hr class="hr">      
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be inserted here -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="totalPrice"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br>
       <h3>*Kindly complete this form to provide your delivery and payment details for a seamless shopping experience.*</h3><br>
       <form>
         <fieldset>
             <legend>Customer information</legend><br>
-            <h5>First Name:</h5>
-            <input type="text" name="fname" size="50" required><br><br>
-            <h5>Last Name:</h5>
-            <input type="text" name="lname" size="50" required><br><br>
-            <h5>E-Mail Address:</h5>
-            <input type="text" name="email" size="50" required placeholder="abc@gmail.com"><br><br>
-            <label for="address"><h5>Address:</h5></label>
-            <textarea class="address" name="address" required></textarea><br>
-            <label for="phone"><h5>Mobile Number:</h5></label>
-            <input type="tel" id="phone" name="phone" placeholder="+94 771234567" required><br><br>
-            <h5>City:</h5>
-            <input type="text" name="city" size="30" required><br><br>
-        </fieldset>
-        <br><br>
-        <fieldset class="legend1">
-            <legend>Payment Details</legend><br>
-            <h5>Card Holder Name:</h5>
-            <input type="text" name="card_holder" size="50" required><br><br>
-            <h5>Card Number:</h5>
-            <input type="text" name="card_number" size="50" required><br><br>
-            <label for="exp_month" class="exp">Expiration Date:</label><br>
-            <input type="number" id="exp_month" name="exp_month" min="1" max="12" required> /
-            <input type="number" id="exp_year" name="exp_year" min="2023" max="2030" required><br><br>
-            <label for="security_code"><h5>Security Code:</h5></label>
-            <input type="number" id="security_code" name="security_code" min="100" max="999" placeholder="123" required><br><br>
-            <h5>Promo Code:</h5>
-            <input type="text" name="promo_code" size="10" required><br><br>
-            <h5>Payment Type:</h5>
-            <label><input type="radio" name="payment_type" value="credit_card" required> Credit Card</label><br><br>
-            <label><input type="radio" name="payment_type" value="debit_card" required> Debit Card</label><br><br>
-            <label><input type="radio" name="payment_type" value="paypal" required> Paypal</label><br><br>
-            <label><input type="radio" name="payment_type" value="cash_on_delivery" required> Cash On Delivery</label><br><br>
-        </fieldset>
+              <label for="fname_first"><h5>First Name:</h5></label>
+              <input type="text" id="fname_first" name="fname_first" size="50" required><br><br>
+          
+              <label for="lname_last"><h5>Last Name:</h5></label>
+              <input type="text" id="lname_last" name="lname_last" size="50" required><br><br>
+          
+              <label for="email"><h5>E-Mail Address:</h5></label>
+              <input type="text" id="email" name="email" size="50" required placeholder="abc@gmail.com"><br><br>
+          
+              <label for="address"><h5>Address:</h5></label>
+              <textarea id="address" class="address" name="address" required></textarea><br><br>
+          
+              <label for="phone"><h5>Mobile Number:</h5></label>
+              <input type="tel" id="phone" name="phone" placeholder="+94 771234567" required><br><br>
+          
+              <label for="city"><h5>City:</h5></label>
+              <input type="text" id="city" name="city" size="30" required><br><br>
+          </fieldset>
+          <br><br>
+          <fieldset class="legend1">
+              <legend>Payment Details</legend><br>
+              <label for="card_holder"><h5>Card Holder:</h5></label>
+              <input type="text" id="card_holder" name="card_holder" size="50" required><br><br>
+          
+              <label for="card_number"><h5>Card Number:</h5></label>
+              <input type="text" id="card_number" name="card_number" size="50" required><br><br>
+          
+              <label for="exp_month"><h5>Expiration Date:</h5></label><br>
+              <input type="number" id="exp_month" name="exp_month" min="1" max="12" placeholder="MM" required> /
+              <input type="number" id="exp_year" name="exp_year" min="2023" max="2030" placeholder="YYYY" required><br><br>
+
+          
+              <label for="security_code"><h5>Security Code:</h5></label>
+              <input type="number" id="security_code" name="security_code" min="100" max="999" placeholder="123" required><br><br>
+          
+              <label for="promo_code"><h5>Promo Code:</h5></label>
+              <input type="text" id="promo_code" name="promo_code" size="10" required><br><br>
+          
+              <h5>Payment Type:</h5>
+              <label><input type="radio" name="payment_type" value="credit_card" required> Credit Card</label><br><br>
+              <label><input type="radio" name="payment_type" value="debit_card" required> Debit Card</label><br><br>
+              <label><input type="radio" name="payment_type" value="paypal" required> Paypal</label><br><br>
+              <label><input type="radio" name="payment_type" value="cash_on_delivery" required> Cash On Delivery</label><br><br>
+          </fieldset>
+          
         <button id="Pay" type="submit">PayNow</button>
     </form>
+    <br>
+
     <div id="thankYouMessage">
       <h1>Thank you for purchasing from Smart Buy Grocery</h1>
       <p>Your order will be delivered within 3 days.</p>
@@ -140,9 +177,10 @@
 
         </div>
       </div>
-    </footer> 
-    
+    </footer>     
   <script src="javascript/script.js"></script>
   <script src="javascript/script 2.js"></script>
+  <script src="javascript/order.js"></script>
+  <script src="javascript/ordersum.js"></script>
 </body>
 </html>

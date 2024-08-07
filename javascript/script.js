@@ -20,6 +20,7 @@ const addToCart = () => {
     while (cartTable.rows.length > 1) cartTable.deleteRow(0);
 
     let totalPrice = 0;
+    const cartItems = [];
     document.querySelectorAll('.quantity-input input[type="number"]').forEach(quantity => {
         if (quantity.value > 0) {
             const orderItem = quantity.closest('.order-item');
@@ -33,8 +34,20 @@ const addToCart = () => {
             row.innerHTML = `<td>${itemName}</td><td>Rs. ${itemPrice.toFixed(2)}</td><td>${itemQuantity}</td><td>Rs. ${itemTotalPrice.toFixed(2)}</td>`;
 
             totalPrice += itemTotalPrice;
+
+            // Add item to cartItems array
+            cartItems.push({
+                name: itemName,
+                price: itemPrice,
+                quantity: itemQuantity,
+                totalPrice: itemTotalPrice
+            });
         }
     });
+
+    // Save cartItems to local storage
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    localStorage.setItem('totalPrice', totalPrice.toFixed(2));
 
     updateTotalPrice(totalPrice);
 }

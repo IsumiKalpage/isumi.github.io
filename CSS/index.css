@@ -320,7 +320,7 @@ font-weight: 400;
 
 .footer-col h4{
   font-size: 18px;
-  color: #fff;
+  color: #412206;
   margin-bottom: 30px;
   font-weight: 500;
   position: relative;
@@ -329,9 +329,9 @@ font-weight: 400;
 .footer-col h4::before{
   content: '';
   position: absolute;
-  left: 0;
+  left: 0px;
   bottom: -10px;
-  background-color: rgb(165, 215, 149);
+  background-color: rgb(89, 46, 9);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -344,7 +344,7 @@ font-weight: 400;
 .footer-col ul li a{
   font-size: 16px;
   font-weight: 300;
-  color: #c0eac0;
+  color: #311c01;
   text-decoration: none;
   display: block;
   transition: all 0.5s ease;
